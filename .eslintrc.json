@@ -1,0 +1,81 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "react-app"
+  ],
+  "plugins": ["@babel", "prettier", "react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "./"]
+      }
+    }
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-multi-spaces": "error",
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "ignoreComments": true
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "@babel/new-cap": "error",
+    "@babel/no-invalid-this": "error",
+    "@babel/no-unused-expressions": "error",
+    "@babel/semi": "error",
+    "import/extensions": "off",
+    "import/newline-after-import": "error",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": [["builtin", "external"], "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@typescript-eslint/recommended", "plugin:import/typescript", "plugin:import/typescript"],
+      "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+          "modules": true
+        },
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+      },
+      "rules": {
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/triple-slash-reference": "off"
+      }
+    }
+  ]
+}

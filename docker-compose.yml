@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      args:
+        APP_DIR: 'app'
+      context: .
+      dockerfile: Dockerfile
+    command: ['yarn', 'start']
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - .:/app
+      - /app/node_modules
