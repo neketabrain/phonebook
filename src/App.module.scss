@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  @extend .container;
+  padding: 32px 16px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.innerWrapper {
+  @extend .container;
+  max-width: 1280px;
+}
