@@ -1,0 +1,17 @@
+@import 'src/styles/themes';
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  margin-right: 48px;
+  color: $black;
+
+  span {
+    font-weight: 300;
+  }
+}
