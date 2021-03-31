@@ -1,22 +1,23 @@
 @import 'src/styles/themes';
-@import 'src/styles/typography';
 @import 'src/styles/variables';
 
 .baseButton {
-  @extend .paragraph;
+  font-size: 16px;
+  line-height: 24px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 32px;
   margin: 0;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  width: 100%;
+  width: auto;
   transition: background-color $transition-duration, border $transition-duration, color $transition-duration;
+  text-decoration: none;
 
   &:disabled {
     cursor: not-allowed;
