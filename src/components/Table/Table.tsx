@@ -5,7 +5,15 @@ import styles from './Table.module.scss';
 import { TableProps } from './Table.types';
 
 const Table = <T extends unknown>(props: TableProps<T>): JSX.Element => {
-  const { columns, items } = props;
+  const { columns, items, onRowDoubleClick } = props;
+
+  const rowClasses = classNames(styles.tableRow, !!onRowDoubleClick && styles.pointer);
+
+  const handleDoubleClick = (item: T) => () => {
+    if (onRowDoubleClick) {
+      onRowDoubleClick(item);
+    }
+  };
 
   return (
     <table className={styles.table}>
@@ -21,7 +29,7 @@ const Table = <T extends unknown>(props: TableProps<T>): JSX.Element => {
 
       <tbody>
         {items.map((item, idx) => (
-          <tr key={idx} className={styles.tableRow}>
+          <tr key={idx} className={rowClasses} onDoubleClick={handleDoubleClick(item)}>
             {columns.map(({ Render, ...column }, columnIdx) => (
               <td className={classNames(styles.tData, column.cellClassName)} key={columnIdx}>
                 <Render item={item} idx={idx} />

@@ -9,6 +9,17 @@
   margin-bottom: 32px;
 }
 
-.edit {
+.buttons {
   margin-top: 32px;
+  display: flex;
+
+  button,
+  a {
+    width: 100%;
+    flex-grow: 1;
+
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
+  }
 }
