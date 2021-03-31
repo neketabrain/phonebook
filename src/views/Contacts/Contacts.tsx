@@ -1,30 +1,13 @@
-import React, { useEffect, useState, FC } from 'react';
+import React, { FC } from 'react';
+import { useSelector } from 'react-redux';
 
 import { ContactsTable, Button, LoaderBlock } from 'src/components';
-import { getContacts } from 'src/services';
-import { ContactType } from 'src/services/contacts/contacts.types';
+import { getContactsState } from 'src/store/contacts';
 
-import { MOCK_DATA } from './Contacts.constants';
 import styles from './Contacts.module.scss';
-import { ContactsProps } from './Contacts.types';
 
-const Contacts: FC<ContactsProps> = () => {
-  const [isFetching, setFetching] = useState(true);
-  const [contacts, setContacts] = useState<ContactType[]>(MOCK_DATA);
-
-  useEffect(() => {
-    setFetching(true);
-    getContacts()
-      .then(({ data }) => {
-        setContacts(data);
-      })
-      .catch(() => {
-        setContacts([]);
-      })
-      .finally(() => {
-        setFetching(false);
-      });
-  }, []);
+const Contacts: FC = () => {
+  const { contacts, isLoading } = useSelector(getContactsState);
 
   return (
     <div className={styles.container}>
@@ -33,8 +16,8 @@ const Contacts: FC<ContactsProps> = () => {
         <Button>Создать контакт</Button>
       </div>
 
-      <div className={styles.container}>
-        {isFetching && <LoaderBlock />}
+      <div className={styles.table}>
+        {isLoading && <LoaderBlock />}
         <ContactsTable items={contacts} />
       </div>
     </div>
