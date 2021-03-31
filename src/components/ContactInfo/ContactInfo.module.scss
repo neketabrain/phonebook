@@ -49,8 +49,10 @@
 .link {
   @extend .value;
   text-decoration: none;
+  outline: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
