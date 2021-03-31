@@ -1,5 +1,4 @@
 @import 'src/styles/themes';
-@import 'src/styles/typography';
 @import 'src/styles/variables';
 
 .menu {
@@ -16,7 +15,6 @@
 }
 
 .link {
-  @extend .paragraph;
   color: $grey;
   outline: none;
   text-decoration: none;
