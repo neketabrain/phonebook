@@ -5,5 +5,6 @@ export * from './Header';
 export * from './LinkButton';
 export * from './Loader';
 export * from './LoaderBlock';
+export * from './ModalContainer';
 export * from './ReturnLink';
 export * from './Table';
