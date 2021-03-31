@@ -1,7 +1,6 @@
 import React, { useEffect, useState, FC } from 'react';
 
-import { ContactsTable, LinkButton } from 'src/components';
-import { PATHS } from 'src/constants';
+import { ContactsTable, Button, LoaderBlock } from 'src/components';
 import { getContacts } from 'src/services';
 import { ContactType } from 'src/services/contacts/contacts.types';
 
@@ -31,10 +30,13 @@ const Contacts: FC<ContactsProps> = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <h2>Список контактов</h2>
-        <LinkButton to={PATHS.createContact}>Создать контакт</LinkButton>
+        <Button>Создать контакт</Button>
       </div>
 
-      <ContactsTable items={contacts} />
+      <div className={styles.container}>
+        {isFetching && <LoaderBlock />}
+        <ContactsTable items={contacts} />
+      </div>
     </div>
   );
 };
