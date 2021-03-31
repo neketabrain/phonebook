@@ -1,0 +1,14 @@
+@import "src/styles/themes";
+@import "src/styles/variables";
+
+.link {
+  text-decoration: none;
+  color: $red;
+  transition: color $transition-duration;
+  font-weight: 600;
+  display: inline-block;
+
+  &:hover, &:focus {
+    color: $red-dark;
+  }
+}

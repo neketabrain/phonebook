@@ -16,3 +16,8 @@
     color: $black;
   }
 }
+
+.table {
+  @extend .container;
+  min-height: 256px;
+}

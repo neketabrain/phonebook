@@ -5,7 +5,7 @@
       "firstName": "Мартын",
       "lastName": "Наумов",
       "middleName": "Кимович",
-      "phone": "+7(504)486-85-08",
+      "phone": "+7 (504) 486-85-08",
       "email": "o@outlook.com",
       "avatar": "https://lh3.googleusercontent.com/proxy/E1BF4jEBeUelhUQObutRYNCfdKxtWcR-bO-8KNtOI3O2Vwa-jFLUJFTzLRN8gk8pA0Yvs1B1C7AhBfbBrwZmXpXuDV7Uc-FtRHKFqIgQQJUdhVNGr2thoDOKPd3hz56jXFYEVuIhHWeZk43jBqRYuxYefc1rBKQ4QoL7-TuHCQ"
     },
@@ -14,7 +14,7 @@
       "firstName": "Лев",
       "lastName": "Беляев",
       "middleName": "Антонович",
-      "phone": "+7(193)115-99-46",
+      "phone": "+7 (193) 115-99-46",
       "email": "dcu@yandex.ru",
       "avatar": "https://i.pinimg.com/736x/4a/bc/c0/4abcc00427dbb86ee5da8270b52204f8.jpg"
     },
@@ -23,7 +23,7 @@
       "firstName": "Денис",
       "lastName": "Потапов",
       "middleName": "Вячеславович",
-      "phone": "+7(319)426-92-18",
+      "phone": "+7 (319) 426-92-18",
       "email": "8edmfh@outlook.com"
     },
     {
@@ -31,7 +31,7 @@
       "firstName": "Александрина",
       "lastName": "Мельникова",
       "middleName": "Михайловна",
-      "phone": "+7(955)417-34-95",
+      "phone": "+7 (955) 417-34-95",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFNTeKD23bQjKrTgzA5vgjVCahNQjvy_5IA&usqp=CAU"
     },
     {
@@ -39,7 +39,7 @@
       "firstName": "Марк",
       "lastName": "Мухин",
       "middleName": "Евгеньевич",
-      "phone": "+7(456)192-38-37",
+      "phone": "+7 (456) 192-38-37",
       "email": "er@gmail.com",
       "avatar": "https://lh3.googleusercontent.com/proxy/m7eaaFAapDLCBRwuOC0WcsNuUHweVYOqwH_P1WOUOvccm5cbeZL75aSg8qbp4zvBuvjURQZwiuq7GWGR6A4q4H8kBs7XhtBaTmw"
     },
@@ -48,7 +48,7 @@
       "firstName": "Ядвига",
       "lastName": "Королёва",
       "middleName": "Богдановна",
-      "phone": "+7(97)061-01-65",
+      "phone": "+7 (976) 061-01-65",
       "email": "o0my@gmail.com"
     },
     {
@@ -56,7 +56,7 @@
       "firstName": "Адельфина",
       "lastName": "Авдеева",
       "middleName": "Владленовна",
-      "phone": "+7(174)408-95-48",
+      "phone": "+7 (174) 408-95-48",
       "email": "gq@yandex.ru"
     },
     {
@@ -64,14 +64,14 @@
       "firstName": "Эрик",
       "lastName": "Капустин",
       "middleName": "Владимирович",
-      "phone": "+7(302)833-57-42"
+      "phone": "+7 (302) 833-57-42"
     },
     {
       "id": 9,
       "firstName": "Глеб",
       "lastName": "Цветков",
       "middleName": "Тимофеевич",
-      "phone": "7(551)687-10-21",
+      "phone": "+7 (551) 687-10-21",
       "email": "o7khr@yandex.ru"
     },
     {
@@ -79,7 +79,7 @@
       "firstName": "Анита",
       "lastName": "Юдина",
       "middleName": "Денисовна",
-      "phone": "7(179)605-84-32",
+      "phone": "+7 (179) 605-84-32",
       "email": "2shlaq@outlook.com"
     },
     {
@@ -87,7 +87,7 @@
       "firstName": "Аверкий",
       "lastName": "Носков",
       "middleName": "Миронович",
-      "phone": "+7(585)114-77-60",
+      "phone": "+7 (585) 114-77-60",
       "email": "cdbw@yandex.ru"
     },
     {
@@ -95,7 +95,7 @@
       "firstName": "Александрина",
       "lastName": "Мельникова",
       "middleName": "Михайловна",
-      "phone": "+7(955)417-34-95",
+      "phone": "+7 (955) 417-34-95",
       "email": "rv7bp@gmail.com",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFNTeKD23bQjKrTgzA5vgjVCahNQjvy_5IA&usqp=CAU"
     },
@@ -104,7 +104,7 @@
       "firstName": "Марк",
       "lastName": "Мухин",
       "middleName": "Евгеньевич",
-      "phone": "+7(456)192-38-37",
+      "phone": "+7 (456) 192-38-37",
       "email": "er@gmail.com",
       "avatar": "https://lh3.googleusercontent.com/proxy/m7eaaFAapDLCBRwuOC0WcsNuUHweVYOqwH_P1WOUOvccm5cbeZL75aSg8qbp4zvBuvjURQZwiuq7GWGR6A4q4H8kBs7XhtBaTmw"
     },
@@ -113,7 +113,7 @@
       "firstName": "Ядвига",
       "lastName": "Королёва",
       "middleName": "Богдановна",
-      "phone": "+7(97)061-01-65",
+      "phone": "+7 (973) 061-01-65",
       "email": "o0my@gmail.com"
     }
   ]

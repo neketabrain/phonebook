@@ -1,18 +1,18 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 
-import { NavMenu } from 'src/components';
+import { PATHS } from 'src/constants';
 
-import { MENU_ITEMS } from './Header.constants';
 import styles from './Header.module.scss';
 
 const Header: FC = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.logo}>
-        Phone<span>Book</span>
+        <Link to={PATHS.contacts}>
+          Phone<span>Book</span>
+        </Link>
       </h1>
-
-      <NavMenu menuItems={MENU_ITEMS} />
     </header>
   );
 };
