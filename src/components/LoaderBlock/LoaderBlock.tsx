@@ -1,17 +1,12 @@
-import classNames from 'classnames';
 import React, { FC } from 'react';
 
 import { Loader } from 'src/components';
 
 import styles from './LoaderBlock.module.scss';
-import { LoaderBlockProps } from './LoaderBlock.types';
 
-const LoaderBlock: FC<LoaderBlockProps> = (props) => {
-  const { className } = props;
-  const classes = classNames(styles.container, className);
-
+const LoaderBlock: FC = () => {
   return (
-    <div className={classes}>
+    <div className={styles.container}>
       <Loader className={styles.loader} />
     </div>
   );

@@ -1,0 +1,47 @@
+@import 'src/styles/themes';
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  @extend .container;
+  display: flex;
+}
+
+.image {
+  @extend .container;
+  width: 200px;
+  height: 200px;
+  margin-right: 32px;
+  background-color: $grey-light;
+  border-radius: 8px;
+
+  img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.row {
+  @extend .container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.label {
+  color: $grey;
+}
+
+.value {
+  color: $black;
+  font-weight: 600;
+}

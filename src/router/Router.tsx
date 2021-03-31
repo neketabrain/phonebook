@@ -15,8 +15,8 @@ const Router: FC = () => {
       <main className={styles.main}>
         <Switch>
           <Route exact={true} path={PATHS.contacts} component={Contacts} />
-          <Route exact={true} path={PATHS.editContact} component={Contact} />
-          <Route exact={true} path={PATHS.contact} component={EditContact} />
+          <Route exact={true} path={PATHS.contact} component={Contact} />
+          <Route exact={true} path={PATHS.editContact} component={EditContact} />
 
           <Redirect to={PATHS.contacts} />
         </Switch>

@@ -1,10 +1,11 @@
 import classNames from 'classnames';
 import React, { FC } from 'react';
 
-import styles from './Loader.module.scss';
-import { LoaderProps } from './Loader.types';
+import { ClassName } from 'src/types';
 
-const Loader: FC<LoaderProps> = (props) => {
+import styles from './Loader.module.scss';
+
+const Loader: FC<ClassName> = (props) => {
   const { className } = props;
   const classes = classNames(styles.loader, className);
 

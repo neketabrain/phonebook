@@ -2,7 +2,7 @@ import { ContactsActionTypes, ContactsActions, ContactsState } from './types';
 
 const initialState: ContactsState = {
   contacts: [],
-  isLoading: false,
+  isLoading: true,
   error: null,
 };
 
