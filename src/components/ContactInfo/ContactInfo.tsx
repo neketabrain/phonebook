@@ -28,12 +28,20 @@ const ContactInfo: FC<ContactInfoProps> = (props) => {
 
         <div className={styles.row}>
           <p className={styles.label}>Телефон</p>
-          <p className={styles.value}>{phone}</p>
+          {!!phone && (
+            <a href={`tel:${phone}`} className={styles.link}>
+              {phone}
+            </a>
+          )}
         </div>
 
         <div className={styles.row}>
           <p className={styles.label}>Email</p>
-          <p className={styles.value}>{email}</p>
+          {!!email && (
+            <a href={`mailto:${email}`} className={styles.link}>
+              {email}
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -43,6 +43,11 @@
       }
     }
   }
+
+  &:hover {
+    box-shadow: $grey-shadow;
+    transform: scale(1);
+  }
 }
 
 .tData {
@@ -56,4 +61,8 @@
   color: $grey;
   padding: 20px 16px;
   height: auto;
+}
+
+.pointer {
+  cursor: pointer;
 }

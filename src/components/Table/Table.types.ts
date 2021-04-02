@@ -15,4 +15,5 @@ export type Column<T> = {
 export type TableProps<T> = {
   columns: Column<T>[];
   items: T[];
+  onRowDoubleClick?: (item: T) => void;
 };

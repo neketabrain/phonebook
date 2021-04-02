@@ -28,3 +28,8 @@ export const getContactsAction = () => async (dispatch: Dispatch<ContactsActions
     dispatch(getContactsFailure(error));
   }
 };
+
+export const addContact = (data: ContactType): ContactsActions => ({
+  type: ContactsActionTypes.addContact,
+  payload: data,
+});

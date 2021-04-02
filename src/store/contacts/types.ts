@@ -10,9 +10,11 @@ export enum ContactsActionTypes {
   getContactsRequest = 'GET_CONTACTS_REQUEST',
   getContactsSuccess = 'GET_CONTACTS_SUCCESS',
   getContactsFailure = 'GET_CONTACTS_FAILURE',
+  addContact = 'ADD_CONTACT',
 }
 
 export type ContactsActions =
   | { type: ContactsActionTypes.getContactsRequest }
   | { type: ContactsActionTypes.getContactsSuccess; payload: ContactType[] }
-  | { type: ContactsActionTypes.getContactsFailure; payload: Error };
+  | { type: ContactsActionTypes.getContactsFailure; payload: Error }
+  | { type: ContactsActionTypes.addContact; payload: ContactType };

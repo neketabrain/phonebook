@@ -45,3 +45,14 @@
   color: $black;
   font-weight: 600;
 }
+
+.link {
+  @extend .value;
+  text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

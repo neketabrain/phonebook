@@ -1,5 +1,5 @@
-@import "src/styles/themes";
-@import "src/styles/variables";
+@import 'src/styles/themes';
+@import 'src/styles/variables';
 
 .link {
   text-decoration: none;
@@ -7,8 +7,10 @@
   transition: color $transition-duration;
   font-weight: 600;
   display: inline-block;
+  outline: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $red-dark;
   }
 }
