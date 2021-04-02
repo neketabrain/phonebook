@@ -1,5 +1,6 @@
 import { Dispatch } from 'react';
 
+import { ContactFormValues } from 'src/components/ContactForm/ContactForm.types';
 import { getContacts } from 'src/services';
 import { ContactType } from 'src/services/contacts/contacts.types';
 
@@ -32,4 +33,17 @@ export const getContactsAction = () => async (dispatch: Dispatch<ContactsActions
 export const addContact = (data: ContactType): ContactsActions => ({
   type: ContactsActionTypes.addContact,
   payload: data,
+});
+
+export const deleteContact = (id: number): ContactsActions => ({
+  type: ContactsActionTypes.deleteContact,
+  payload: id,
+});
+
+export const editContact = (id: number, data: ContactFormValues): ContactsActions => ({
+  type: ContactsActionTypes.editContact,
+  payload: {
+    id,
+    contact: data,
+  },
 });
