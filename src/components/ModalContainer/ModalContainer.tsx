@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { useState, useEffect, FC, TransitionEvent } from 'react';
 import { createPortal } from 'react-dom';
 
+import { CloseIcon } from 'src/assets';
 import { useClickOutside } from 'src/hooks';
 
 import styles from './ModalContainer.module.scss';
@@ -47,6 +48,11 @@ const ModalContainer: FC<ModalContainerProps> = (props) => {
   return createPortal(
     <div className={wrapperClasses} onTransitionEnd={handleTransitionEnd}>
       <div className={containerClasses} ref={ref} role="dialog">
+        <div className={styles.closeContainer}>
+          <button onClick={handleClose}>
+            <CloseIcon />
+          </button>
+        </div>
         {children}
       </div>
     </div>,

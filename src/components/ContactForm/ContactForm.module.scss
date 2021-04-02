@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+
+.form {
+  width: 100%;
+}
+
+.input {
+  margin-top: 16px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.row {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    display: block;
+  }
+}
+
+.rowInput {
+  width: 100%;
+  flex-grow: 1;
+
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    &:not(:first-child) {
+      margin: 16px 0 0;
+    }
+  }
+}

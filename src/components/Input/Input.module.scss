@@ -1,0 +1,59 @@
+@import 'src/styles/themes';
+@import 'src/styles/variables';
+
+.label {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.input {
+  font-size: 16px;
+  margin-top: 8px;
+  width: 100%;
+  border: 2px solid $grey-light;
+  border-radius: 8px;
+  height: 40px;
+  padding: 8px 16px;
+  color: $black;
+  transition: color $transition-duration, box-shadow $transition-duration, background-color $transition-duration,
+    border-color $transition-duration;
+  outline: none;
+
+  &:focus:not(:read-only) {
+    box-shadow: $grey-shadow;
+    border-color: $grey;
+  }
+
+  &:disabled {
+    background-color: $grey-light;
+    cursor: not-allowed;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &:read-only {
+    background-color: $grey-light;
+  }
+}
+
+.hasError {
+  color: $red;
+  border-color: $red;
+
+  &::placeholder {
+    color: $red;
+  }
+}
+
+.error {
+  color: $red;
+  font-size: 14px;
+  margin-top: 4px;
+}

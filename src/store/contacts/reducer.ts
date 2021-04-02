@@ -17,6 +17,9 @@ const contactsReducer = (state = initialState, action: ContactsActions): Contact
     case ContactsActionTypes.getContactsFailure:
       return { ...state, isLoading: false, error: action.payload };
 
+    case ContactsActionTypes.addContact:
+      return { ...state, contacts: [...state.contacts, action.payload] };
+
     default:
       return state;
   }
