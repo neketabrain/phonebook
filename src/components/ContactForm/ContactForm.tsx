@@ -8,7 +8,7 @@ import { ContactFormProps } from './ContactForm.types';
 import { validate } from './ContactForm.utils';
 
 const ContactForm: FC<ContactFormProps> = (props) => {
-  const { defaultValues, onSubmit } = props;
+  const { defaultValues, onSubmit, buttonLabel } = props;
 
   return (
     <Form
@@ -77,7 +77,9 @@ const ContactForm: FC<ContactFormProps> = (props) => {
             )}
           />
 
-          <Button className={styles.button}>Создать</Button>
+          <Button type="submit" className={styles.button}>
+            {buttonLabel || 'Создать'}
+          </Button>
         </form>
       )}
     />
