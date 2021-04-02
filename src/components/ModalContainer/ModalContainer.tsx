@@ -49,7 +49,7 @@ const ModalContainer: FC<ModalContainerProps> = (props) => {
     <div className={wrapperClasses} onTransitionEnd={handleTransitionEnd}>
       <div className={containerClasses} ref={ref} role="dialog">
         <div className={styles.closeContainer}>
-          <button onClick={handleClose}>
+          <button onClick={handleClose} aria-label="Закрыть">
             <CloseIcon />
           </button>
         </div>
